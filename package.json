@@ -1,0 +1,36 @@
+{
+  "name": "popup",
+  "version": "1.0.0",
+  "description": "a popup layer plugin",
+  "main": "dist/popup.min.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/susucain/popup.js.git"
+  },
+  "keywords": [
+    "popup",
+    "layer"
+  ],
+  "author": "Jeffery",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/susucain/popup.js/issues"
+  },
+  "homepage": "https://github.com/susucain/popup.js#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
