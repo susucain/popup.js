@@ -19,18 +19,17 @@
         this.config = {
         	width: '',
         	height: '',
-            title: '',
+            title: '系统消息',
         	content: '',
-            hasCloseBtn: false,
+            hasCloseBtn: true,
             skin: 'window-default',
             alertBtnText: '确定',
             confirmBtnText: '确定',
-            confirmHandle: null,
             cancleBtnText: '取消',
             promptBtnText: '确定',
             hasMask: true,
             isDraggable: true,
-            dragHandler: ''
+            dragHandler: '.window-header'
         };
         this.handlers = {};
         this.boundingBox = null;
@@ -129,7 +128,6 @@
                     that.destroy();
                 });
 
-                that.config.confirmHandle && that.on('confirm', that.config.confirmHandle);
             },
             syncUI: function () {
                 if (this.config.skin) {

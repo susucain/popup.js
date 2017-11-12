@@ -51,16 +51,17 @@
 
         $('.confirm').click(function () {
             popup.confirm({
+                width: 300,
+                height: 180,
                 content: 'Are you sure?',
                 title: '系统消息',
                 hasCloseBtn: true,
                 dragHandler: '.window-header',
-                confirmHandle: function () {
-                    alert('You can do some things');
-                }
             }).on('cancle', function () {
                 alert('Are you sure want to canle?');
-            });
+            }).on('confirm', function () {
+                alert('You can do some things')
+            })
         });
 
         $('.prompt').click(function () {
