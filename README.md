@@ -127,8 +127,8 @@ popup.prompt({
 
 ### popup.alert() 默认皮肤
 
-![popup.alert 默认皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-alert.jpg)
+![popup.alert 默认皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-alert.JPG)
 
-![popup.confirm 默认皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-confirm.jpg)
+![popup.confirm 默认皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-confirm.JPG)
 
-![popup.prompt moon皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-propmpt.jpg)
+![popup.prompt moon皮肤](https://github.com/susucain/popup.js/blob/master/test/img/preview-propmpt.JPG)
