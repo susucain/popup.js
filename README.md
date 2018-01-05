@@ -2,19 +2,22 @@
 
 propup.js为一个弹出层模拟插件，内置两套皮肤，可模拟浏览器内置的弹出层方法，`alert()`，`confirm()`和`prompt()`。
 
+## Demo
+
+[demo](https://susucain.github.io/popup.js/)
+
 ## 依赖
 
 [jquery](https://github.com/jquery/jquery) [jquery-ui](https://github.com/jquery/jquery-ui) [popup.css](https://raw.githubusercontent.com/susucain/popup.js/master/dist/popup.min.css)
 
 ## 基础使用
 
-使用node.js：
+使用require.js：
 
 ```javascript
-const popup = require('./popup.js');
-
-// code
-
+require(['popup'], function (popup)) {
+    // code        
+}
 ```
 
 使用script标签：
@@ -23,7 +26,7 @@ const popup = require('./popup.js');
 <script type="text/javascript" src="../dist/popup.min.js"></script>
 <script type="text/javascript">
 
-//code
+// code
 
 </script>
 ```
