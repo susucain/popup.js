@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+    <link rel="stylesheet" href="./dist/popup.min.css">
+    <style>
+        .btn {
+            padding: 0 18px;
+            border: 1px solid #C9C9C9;
+            border-radius: 3px;
+            outline: none;
+            line-height: 38px;
+            color: #555;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            border-color: #009688;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <button class="alert btn">alert弹窗</button>
+    <button class="confirm btn">confirm 弹窗</button>
+    <button class="prompt btn">prompt 弹窗</button>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-ui.js"></script>
+    <script type="text/javascript" src="./dist/popup.min.js"></script>
+    <script type="text/javascript">
+        $('.alert').click(function () {
+            popup.alert({
+                content: 'welcome',
+                width: 300,
+                height: 200,
+                title: '系统消息',
+                hasCloseBtn: true,
+                alertBtnText: 'OK',
+                dragHandler: '.window-header',
+            })
+            .on('close', function () {
+                alert('close');
+            })
+            .on('alert', function () {
+                alert('alert');
+            });
+        });
+
+        $('.confirm').click(function () {
+            popup.confirm({
+                width: 300,
+                height: 180,
+                content: 'Are you sure?',
+                title: '系统消息',
+                hasCloseBtn: true,
+                dragHandler: '.window-header',
+            }).on('cancle', function () {
+                alert('Are you sure want to canle?');
+            }).on('confirm', function () {
+                alert('You can do some things')
+            })
+        });
+
+        $('.prompt').click(function () {
+            popup.prompt({
+                width: 350,
+                height: 200,
+                content: 'please input some strings',
+                title: '输入',
+                hasCloseBtn: true,
+                dragHandler: '.window-header',
+                promptBtnText: 'OK',
+                skin: 'window-moon'
+            }).on('prompt', function (data) {
+                alert(data);
+            });
+        });
+    </script>
+</body>
+</html>
